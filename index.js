@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
     cors({
         origin: process.env.NODE_ENV === "production" ?
-            "vercel.app" :
+            "https://image-uploader-omega-three.vercel.app/" :
             "http://localhost:5173",
     })
 );
